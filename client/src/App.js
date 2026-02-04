@@ -28,7 +28,7 @@ export default function App() {
       setLoading(true);
       setResult(null);
       const res = await axios.post(
-        "http://localhost:5000/api/design/generate",
+        "https://home-genius-ai.onrender.com/api/design/generate",
         form
       );
       setResult(res.data);
